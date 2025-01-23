@@ -14,6 +14,8 @@ print("step 4")
 print("look at the first 25 entries")
 
 #Your code goes here:
+df_first_25 = df.head(25)
+print(df_first_25)
 
 print("#"*10)
 input()
@@ -23,6 +25,9 @@ print("look at the last 10 entries")
 
 #Your code goes here:
 
+df_last_10 = df.tail(10)
+print(df_last_10)
+
 print("#"*10)
 input()
 
@@ -30,7 +35,10 @@ print("step 6")
 print("find out the number of rows in the dataset")
 
 #Your code goes here:
+df_dataframe = pd.DataFrame(df)
+num_of_rows = len(df)
 
+print(f"The number of rows is {num_of_rows}")
 print("#"*10)
 input()
 
